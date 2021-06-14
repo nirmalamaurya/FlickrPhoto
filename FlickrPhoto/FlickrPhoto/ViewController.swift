@@ -8,11 +8,27 @@
 import UIKit
 
 class ViewController: UIViewController , StoryBoardManager {
+    
+@IBOutlet weak var collectionView: UICollectionView!
+private let viewControllerHelperAdaptor = ViewControllerHelperAdaptor()
+    private let layout = UICollectionViewFlowLayout()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "FlickrPhoto"
+        setupCollectionView()
     }
+
+
+func setupCollectionView() {
+    viewControllerHelperAdaptor.registerCells(with: collectionView)
+    collectionView.dataSource = viewControllerHelperAdaptor
+    collectionView.delegate = viewControllerHelperAdaptor
+    layout.scrollDirection = .vertical
+    layout.minimumLineSpacing = 0
+    layout.minimumInteritemSpacing = 0
+    collectionView.setCollectionViewLayout(layout, animated: true)
+}
 }
 
 

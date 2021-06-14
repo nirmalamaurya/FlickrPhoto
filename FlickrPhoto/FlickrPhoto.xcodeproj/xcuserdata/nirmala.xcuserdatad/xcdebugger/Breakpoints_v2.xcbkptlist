@@ -20,5 +20,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F472244-25FF-475C-B40D-F2D6A2BEAF21"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FlickrPhoto/Views/CustomCells/PhotoCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "init(frame:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2F472244-25FF-475C-B40D-F2D6A2BEAF21 - 4c77b221192c397"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlickrPhoto.PhotoCollectionViewCell.__allocating_init(frame: __C.CGRect) -&gt; FlickrPhoto.PhotoCollectionViewCell"
+                  moduleName = "FlickrPhoto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirmala/Desktop/flickrPhoto/FlickrPhoto/FlickrPhoto/Views/CustomCells/PhotoCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "2F472244-25FF-475C-B40D-F2D6A2BEAF21 - b2cfe3da0710ac7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FlickrPhoto.PhotoCollectionViewCell.init(frame: __C.CGRect) -&gt; FlickrPhoto.PhotoCollectionViewCell"
+                  moduleName = "FlickrPhoto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nirmala/Desktop/flickrPhoto/FlickrPhoto/FlickrPhoto/Views/CustomCells/PhotoCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "106">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
