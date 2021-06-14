@@ -48,7 +48,7 @@ func setupCollectionView() {
     
     func setupErrorView() {
         errorView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(errorView)
+        self.view.addSubview(errorView)
         errorView.isHidden = true
         setupErrorViewConstraints()
     }

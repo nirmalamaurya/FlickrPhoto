@@ -13,7 +13,7 @@ class ErrorView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .green
+        self.backgroundColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         setUpErrorLabel()
     }
     
@@ -22,7 +22,7 @@ class ErrorView: UIView {
         errorLabel.text = "There is some Error Please try after some time"
         errorLabel.numberOfLines = 0
         errorLabel.textAlignment = .center
-        errorLabel.textColor = .white
+        errorLabel.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         self.addSubview(errorLabel)
         setupConstraints()
     }
