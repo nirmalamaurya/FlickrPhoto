@@ -12,12 +12,15 @@ let cellIdentifier = "PhotoCollectionViewCell"
 class ViewControllerHelperAdaptor : NSObject{
     
     private let spacing: CGFloat = 3
-
+    private var contents: [URL] = []
     
     func registerCells(with collectionView: UICollectionView) {
         collectionView.register(PhotoCollectionViewCell.self, forCellWithReuseIdentifier: cellIdentifier)
     }
     
+    func update(with viewState: PhotoViewState) {
+        contents += viewState.content
+    }
     
     private func cellSize(width  : CGFloat) -> CGSize {
         let height = width/3 - (spacing * 2)
@@ -30,7 +33,7 @@ extension ViewControllerHelperAdaptor : UICollectionViewDataSource{
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 5
+        return contents.count
     }
   
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
