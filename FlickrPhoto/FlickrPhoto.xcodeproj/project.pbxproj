@@ -15,6 +15,9 @@
 		582670262677175200B251D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582670242677175200B251D6 /* LaunchScreen.storyboard */; };
 		582670312677175200B251D6 /* FlickrPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582670302677175200B251D6 /* FlickrPhotoTests.swift */; };
 		5826703C2677175200B251D6 /* FlickrPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826703B2677175200B251D6 /* FlickrPhotoUITests.swift */; };
+		5826704A2677185400B251D6 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582670492677185400B251D6 /* NavigationManager.swift */; };
+		5826704C26771F7C00B251D6 /* CoordinatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826704B26771F7C00B251D6 /* CoordinatorManager.swift */; };
+		5826704E2677241D00B251D6 /* StoryBoardManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826704D2677241D00B251D6 /* StoryBoardManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		582670372677175200B251D6 /* FlickrPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5826703B2677175200B251D6 /* FlickrPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoUITests.swift; sourceTree = "<group>"; };
 		5826703D2677175200B251D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582670492677185400B251D6 /* NavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		5826704B26771F7C00B251D6 /* CoordinatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorManager.swift; sourceTree = "<group>"; };
+		5826704D2677241D00B251D6 /* StoryBoardManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoardManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		582670182677174E00B251D6 /* FlickrPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				5826704F267727FD00B251D6 /* Utility */,
 				582670192677174E00B251D6 /* AppDelegate.swift */,
 				5826701B2677174E00B251D6 /* SceneDelegate.swift */,
 				5826701D2677174E00B251D6 /* ViewController.swift */,
@@ -126,6 +133,16 @@
 				5826703D2677175200B251D6 /* Info.plist */,
 			);
 			path = FlickrPhotoUITests;
+			sourceTree = "<group>";
+		};
+		5826704F267727FD00B251D6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5826704D2677241D00B251D6 /* StoryBoardManger.swift */,
+				582670492677185400B251D6 /* NavigationManager.swift */,
+				5826704B26771F7C00B251D6 /* CoordinatorManager.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5826701E2677174E00B251D6 /* ViewController.swift in Sources */,
+				5826704A2677185400B251D6 /* NavigationManager.swift in Sources */,
+				5826704C26771F7C00B251D6 /* CoordinatorManager.swift in Sources */,
 				5826701A2677174E00B251D6 /* AppDelegate.swift in Sources */,
+				5826704E2677241D00B251D6 /* StoryBoardManger.swift in Sources */,
 				5826701C2677174E00B251D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
