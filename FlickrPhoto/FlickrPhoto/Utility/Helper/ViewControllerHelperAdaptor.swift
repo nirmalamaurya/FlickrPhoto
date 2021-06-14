@@ -22,8 +22,9 @@ class ViewControllerHelperAdaptor : NSObject{
         contents += viewState.content
     }
     
+   
     private func cellSize(width  : CGFloat) -> CGSize {
-        let height = width/3 - (spacing * 2)
+        let height = (width * 3)/4
         return CGSize(width: width, height: height)
     }
     
@@ -39,6 +40,9 @@ extension ViewControllerHelperAdaptor : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? PhotoCollectionViewCell{
+            
+            let url = contents[indexPath.row]
+            cell.setImageUrl(url: url)
             return cell
         }
         
@@ -48,7 +52,7 @@ extension ViewControllerHelperAdaptor : UICollectionViewDataSource{
 }
 extension ViewControllerHelperAdaptor : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width/3 - (spacing * 2)
+      let    width = collectionView.bounds.width/3 - (spacing * 2)
         let size = cellSize(width: width)
         return size
     }

@@ -8,6 +8,8 @@ target 'FlickrPhoto' do
   # Pods for FlickrPhoto
 
  pod 'Alamofire'
+pod 'SDWebImage'
+
 
   target 'FlickrPhotoTests' do
     inherit! :search_paths

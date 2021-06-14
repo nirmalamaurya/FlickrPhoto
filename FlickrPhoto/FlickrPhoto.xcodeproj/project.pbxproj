@@ -27,6 +27,8 @@
 		5826706226775B8F00B251D6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826706126775B8F00B251D6 /* Photo.swift */; };
 		5826706A26776E2500B251D6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826706926776E2500B251D6 /* ViewModel.swift */; };
 		5826706C267772C400B251D6 /* PhotoReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826706B267772C400B251D6 /* PhotoReceiver.swift */; };
+		5826706E267797D400B251D6 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826706D267797D400B251D6 /* ErrorView.swift */; };
+		58267070267798B100B251D6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826706F267798B100B251D6 /* ProgressView.swift */; };
 		7982C425BFE4B8DA825F6232 /* Pods_FlickrPhotoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166789F7CB20DEB15151DF07 /* Pods_FlickrPhotoTests.framework */; };
 		A5CB686743DFCEBFAA756DE1 /* Pods_FlickrPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D35F6790F64CEAE60FA092D /* Pods_FlickrPhoto.framework */; };
 		E3122446E65BAEE1FDEF4E71 /* Pods_FlickrPhoto_FlickrPhotoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304294CD8A94EA2D98E7FD12 /* Pods_FlickrPhoto_FlickrPhotoUITests.framework */; };
@@ -80,6 +82,8 @@
 		5826706126775B8F00B251D6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5826706926776E2500B251D6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		5826706B267772C400B251D6 /* PhotoReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoReceiver.swift; sourceTree = "<group>"; };
+		5826706D267797D400B251D6 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5826706F267798B100B251D6 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		8D35F6790F64CEAE60FA092D /* Pods_FlickrPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19F590BB5AD5FE5EDCA5B08 /* Pods-FlickrPhotoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrPhotoTests.release.xcconfig"; path = "Target Support Files/Pods-FlickrPhotoTests/Pods-FlickrPhotoTests.release.xcconfig"; sourceTree = "<group>"; };
 		CEFE79A7FB8D4D0F0EFAB083 /* Pods-FlickrPhotoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrPhotoTests.debug.xcconfig"; path = "Target Support Files/Pods-FlickrPhotoTests/Pods-FlickrPhotoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 				582670242677175200B251D6 /* LaunchScreen.storyboard */,
 				5826701F2677174E00B251D6 /* Main.storyboard */,
 				582670532677368A00B251D6 /* CustomCells */,
+				5826706D267797D400B251D6 /* ErrorView.swift */,
+				5826706F267798B100B251D6 /* ProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 				5826704A2677185400B251D6 /* NavigationManager.swift in Sources */,
 				5826704C26771F7C00B251D6 /* CoordinatorManager.swift in Sources */,
 				5826705E26775B5400B251D6 /* ResponseData.swift in Sources */,
+				58267070267798B100B251D6 /* ProgressView.swift in Sources */,
 				5826706A26776E2500B251D6 /* ViewModel.swift in Sources */,
 				5826706226775B8F00B251D6 /* Photo.swift in Sources */,
 				58267052267734F600B251D6 /* ViewControllerHelperAdaptor.swift in Sources */,
@@ -545,6 +552,7 @@
 				5826706C267772C400B251D6 /* PhotoReceiver.swift in Sources */,
 				5826704E2677241D00B251D6 /* StoryBoardManger.swift in Sources */,
 				5826701C2677174E00B251D6 /* SceneDelegate.swift in Sources */,
+				5826706E267797D400B251D6 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
