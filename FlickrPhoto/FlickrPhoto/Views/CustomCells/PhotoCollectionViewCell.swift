@@ -23,7 +23,7 @@ class PhotoCollectionViewCell:UICollectionViewCell{
     
     private func cellSetUp(){
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
         self.addSubview(imageView)

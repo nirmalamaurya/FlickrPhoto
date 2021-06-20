@@ -15,14 +15,14 @@ class ProgressView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .darkGray
+        self.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         self.alpha = 0.5
         setUpView()
     }
     
     func setUpView() {
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.color = .white
+        activityIndicator.color = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         activityIndicator.startAnimating()
         activityIndicator.hidesWhenStopped = true
         self.addSubview(activityIndicator)

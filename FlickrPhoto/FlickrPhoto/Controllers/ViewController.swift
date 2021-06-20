@@ -16,7 +16,7 @@ class ViewController: UIViewController , StoryBoardManager {
     private let serviceManger = ServiceManger()
     private var viewModel: ViewModel?
     private let errorView = ErrorView()
-    private let progressView = ProgressView()
+    private var progressView :ProgressView!
 
     private let layout = UICollectionViewFlowLayout()
 
@@ -24,9 +24,10 @@ class ViewController: UIViewController , StoryBoardManager {
         super.viewDidLoad()
         self.title = "FlickrPhoto"
         setupCollectionView()
-        setUpViewModel()
         setupProgressView()
         setupErrorView()
+        setUpViewModel()
+      
     }
     
     func setUpViewModel(){
@@ -63,6 +64,8 @@ func setupCollectionView() {
     }
     
     func setupProgressView() {
+        
+        progressView = ProgressView(frame: self.view.frame)
         progressView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(progressView)
         progressView.isHidden = true
