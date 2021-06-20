@@ -11,7 +11,7 @@ This application includes below features
 - Swift 5 has been used as development language.
 
 
-
+## Note
 I could not include search bar and unit test, Happy to implement if required.
 Please review my code quality and app architecture. Happy to have a chat.
 
